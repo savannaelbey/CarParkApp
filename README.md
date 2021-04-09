@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Coin Change Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my take on the famous coin change challenge.
 
-## Available Scripts
+* A car park has a payment machine that accepts only cash – notes and coins.
+* It's a max stay 24-hour car park, so cars cannot stay longer than this duration or they get towed!
+* It costs £3.00 for the first hour, and then 1p for every extra min stayed.
+* Coins are 1p, 2p, 5p, 10p, 20p, 50p and £1; Notes can be £5, £10, and £20
 
-In the project directory, you can run:
+This is a single page react app that takes the time the car enters the car park and the time it exits as inputs, it calculates and outputs the parking charge and then takes payment in as an input. It then calculates the output change using the least amount of coins/notes.
 
-### `yarn start`
+## Test examples
+```
+Time in: 9:06
+Time out: 10:17
+Payment In: £5
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Output cost: £3.11
+output change: £1, 50p, 20p, 10p, 5p, 2p, 2p
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installing and running the app
+Clone the current repository:
+```
+$ git clone https://github.com/savannaelbey/reactCoinChange.git
+```
 
-### `yarn test`
+Navigate to the directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ cd reactCoinChange
+```
 
-### `yarn build`
+Install the project dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A web browser should automatically open [http://localhost:3000](http://localhost:3000).
