@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './app.css';
 
 function App() {
   const [timeIn, setTimeIn] = useState('');
@@ -90,7 +91,17 @@ function App() {
   console.log('outputChange: ' + outputChange)
 
   return (
-    <div className="App">
+    <div>
+    <h1 className="app-title">Car Parking Charge</h1>
+    <div className="container">
+    <div
+          style={{
+            padding: 30,
+            textAlign: "center",
+            maxWidth: 500,
+            margin: "auto"
+          }}
+        >
       Time in:
       <input
         type ="time"
@@ -121,7 +132,7 @@ function App() {
       Output change: {outputChange}
       <br/>
       <br/>
-      <button onClick={() => {
+      <button className="refresh-btn" onClick={() => {
         setTimeIn('');
         setTimeOut('');
         setOutputCost(0);
@@ -129,6 +140,8 @@ function App() {
       }}>
       Refresh
       </button>
+      </div>
+    </div>
     </div>
   );
 }

@@ -1,0 +1,29 @@
+body{
+    background: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-title{
+    text-align: center;
+    color: #14213d;
+    font-size: 70px;
+}
+
+.container{
+    border: 5px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refresh-btn{
+    background: lightblue;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+}
