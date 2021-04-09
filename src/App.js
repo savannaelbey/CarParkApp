@@ -17,7 +17,7 @@ function App() {
       let numOfMinsAtEntry = Number((timeInArr[0] * 60)) + Number(timeInArr[1])
       let numOfMinsAtExit = Number((timeOutArr[0] * 60)) + Number(timeOutArr[1])
       //if exit time is the following day, add 24 hours to timeout
-      if (Number(timeInArr[0]) <= Number(timeOutArr[0])) {
+      if (numOfMinsAtExit > numOfMinsAtEntry) {
         let numOfMinsInCarPark = numOfMinsAtExit - numOfMinsAtEntry;
         if(numOfMinsInCarPark > 60) {
           setOutputCost(3 + (numOfMinsInCarPark - 60) / 100);
