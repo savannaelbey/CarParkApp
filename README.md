@@ -19,6 +19,11 @@ Output cost: £3.11
 output change: £1, 50p, 20p, 10p, 5p, 2p, 2p
 ```
 
+## App Screenshot
+
+<img width="624" alt="Screenshot 2021-04-09 at 15 10 04" src="https://user-images.githubusercontent.com/71889577/114192673-abdb4800-9945-11eb-837f-bc12d58a3328.png">
+
+
 ## Installing and running the app
 Clone the current repository:
 ```
