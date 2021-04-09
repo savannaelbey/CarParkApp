@@ -11,7 +11,19 @@ function App() {
 
   useEffect(() => {
     calculateCost();
-  });
+  }, [calculateCost]);
+
+  useEffect(() => {
+    processPaymentInput();
+  }, [paymentIn]);
+
+  useEffect(() => {
+    calculateMinChange();
+  }, [paymentArray]);
+
+  useEffect(() => {
+    formatOutputChange();
+  }, [changeArr, outputCost]);
 
   console.log('in: ' + timeIn)
   console.log('out: ' + timeOut)
@@ -117,16 +129,17 @@ function App() {
       />
       <br/>
       <br/>
-      <button onClick={() => {
-        processPaymentInput();
-        calculateMinChange();
-        formatOutputChange();
-      }}>
-      Calculate minimum change
-      </button>
-      <br/>
-      <br/>
       Output change: {outputChange}
+      <br/>
+      <br/>
+      <button onClick={() => {
+        setTimeIn('');
+        setTimeOut('');
+        setOutputCost(0);
+        setPaymentIn('');
+      }}>
+      Refresh
+      </button>
     </div>
   );
 }
