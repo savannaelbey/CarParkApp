@@ -1,6 +1,4 @@
-# Coin Change Challenge
-
-This is my take on the famous coin change challenge.
+# Car Park App
 
 * A car park has a payment machine that accepts only cash – notes and coins.
 * It's a max stay 24-hour car park, so cars cannot stay longer than this duration or they get towed!
